@@ -1,59 +1,59 @@
 export const Work = [
     {
         id:1,
-        name:"Agency Landing Page",
-        description:"It is build on top of the React JS, with styledComponents and GSAP for smooth scrolling animations.",
-        tags:["react","gsap","styledComponents"],
+        name:"Statue Of Unity Tickets",
+        description:"Official Ticket Booking Application for World's Tallest Statue, Statue of Unity. One can book all the tickets of Statue of Unity and all the activities in the surrounding of the Statue of Unity.",
+        tags:["react-native","javascript"],
         
-        demo:"https://agency-website-eta.vercel.app/",
-        github:"https://github.com/codebucks27/Agency-website"
+        demo:"https://play.google.com/store/apps/details?id=com.statueofunityapp",
+        github:"100000 +"
     },
     {
         id:2,
-        name:"Job listing website",
-        description:"A Job listing website build in ReactJS. With searching and filtering functionalities.",
-        tags:["react","sass"],
+        name:"JoyScore: The Joy Of Self Care",
+        description:"We believe that everyone deserves a life filled with happiness. That’s why we created JoyScore. We designed this self-care app to measure and improve your mood and overall happiness",
+        tags:["react-native","javascript"],
         
-        demo:"http://react-job-listing-website.codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/react-job-listing-website"
+        demo:"https://play.google.com/store/apps/details?id=com.joyscore",
+        github:"50000 +"
         
     },
     {
         id:3,
-        name:"Dev.to Clone",
-        description:"A clone of Dev.to build using ReactJS. With realtime fetching of articles from dev.to using API.",
-        tags:["react","api","sass"],
+        name:"AG&P Journey Management System",
+        description:"This app is made for 'AG&P Pratham JMS' Application for truck drivers. where admin can schedule trips",
+        tags:["react-native","javascript"],
         
-        demo:"http://devto-clone-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/devto-clone"
+        demo:"https://play.google.com/store/apps/details?id=com.agp",
+        github:"500 +"
     },
     {
         id:4,
-        name:"Sidebar Menu",
-        description:"A cool looking sidebar menu build using ReactJS and styledComponents.It has really smooth animations.",
-        tags:["react","styledComponents","react-router"],
+        name:"Sparca",
+        description:"SparCa is an electronic application that provides you with many options related to your car spare parts, whether new or used parts.",
+        tags:["react-native","javascript"],
         
-        demo:"https://react-sidebar.vercel.app/",
-        github:"https://github.com/codebucks27/react-sidebar"
+        demo:"https://apps.apple.com/al/app/sparca/id1589947126",
+        github:"500 +"
        
     },{
         id:5,
-        name:"Todo App(React + Redux)",
-        description:"A todo app build using Redux-toolkit and framer-motion for smooth animations.",
-        tags:["react","redux","framer-motion"],
+        name:"Servii",
+        description:"India's first Vehicle Management App for Gated Communities.",
+        tags:["react-native","javascript"],
         
-        demo:"http://react-redux-todo-app-git-main-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-Redux-Todo-App"
+        demo:"https://play.google.com/store/apps/details?id=com.servi",
+        github:"5 +"
         
     },
     {
         id:6,
-        name:"Responsive Navigation Menu",
-        description:"A reponsive navbar menu component in ReactJS with react-router functionalities. Built from scratch.",
-        tags:["react","react-router","css"],
+        name:"Buymyjewel - B2B Live App",
+        description:"Buymyjewel is India’s first B2B Jewellery E-Commerce platform for retailers who wish to get authentic hallmarked jewellery at wholesale prices.",
+        tags:["react-native","javascript"],
         
-        demo:"http://react-responsive-navbar-codebucks27.vercel.app/",
-        github:"https://github.com/codebucks27/React-responsive-navbar"
+        demo:"https://play.google.com/store/apps/details?id=com.buymyjewel.live",
+        github:"5000 +"
         
     },
     
