@@ -28,15 +28,6 @@ export const Work = [
         github:"500 +"
     },
     {
-        id:4,
-        name:"Sparca",
-        description:"SparCa is an electronic application that provides you with many options related to your car spare parts, whether new or used parts.",
-        tags:["react-native","javascript"],
-        
-        demo:"https://apps.apple.com/al/app/sparca/id1589947126",
-        github:"500 +"
-       
-    },{
         id:5,
         name:"Servii",
         description:"India's first Vehicle Management App for Gated Communities.",
@@ -54,6 +45,16 @@ export const Work = [
         
         demo:"https://play.google.com/store/apps/details?id=com.buymyjewel.live",
         github:"5000 +"
+        
+    },
+    {
+        id:7,
+        name:"Ung Arena Vestby",
+        description:"Ung Arena Vestby - En app for ungdom i Vestby kommune. Du kan i denne appen stille spersmal anonymt til envoksen.",
+        tags:["react-native","javascript"],
+        
+        demo:"https://apps.apple.com/in/app/ung-arena-vestby/id1621706802",
+        github:"10000 +"
         
     },
     
