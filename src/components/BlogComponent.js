@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import renderHTML from 'react-render-html';
+import moment from 'moment';
 
 const Box = styled(motion(Link))`
 width: calc(10rem + 15vw);
@@ -68,16 +70,7 @@ ${Box}:hover &{
 }
 `
 
-const HashTags = styled.div`
-padding: 0.5rem 0;
-@media (max-width: 25em) {
-    font-size: calc(0.5em + 1vw);
-}
-`
-const Tag = styled.span`
-padding-right: 0.5rem;
-`
-const Date = styled.span`
+const DateView = styled.span`
 padding: 0.5rem 0;
 @media (max-width: 25em) {
     font-size: calc(0.5em + 1vw);
@@ -101,29 +94,23 @@ const Item = {
 
 
 const BlogComponent = (props) => {
-const { name, tags, date, imgSrc, link } = props.blog;
-  return (
-  <Container
-  variants={Item}
-  >
-  <Box target="_blank" to={{pathname: link}}>
-      <Image img={imgSrc} />
-      <Title>{name}</Title>
-      <HashTags>
-          {
-              tags.map((t,id) => {
-                  return <Tag key={id}>
-                      #{t}
-                  </Tag>
-              })
-          }
-      </HashTags>
-      <Date>
-          {date}
-      </Date>
-  </Box>
-  </Container>
-  );
+    const { title, date, imgSrc, link, excerpt } = props.blog;
+    return (
+        <Container
+            variants={Item}
+        >
+            <Box target="_blank" to={{ pathname: link }}>
+                <Image img={imgSrc} />
+                <Title>{title?.rendered}</Title>
+                <div>
+                    {renderHTML(excerpt?.rendered)}
+                </div>
+                <DateView>
+                {moment(new Date(date)).format("DD MMM YYYY")}
+                </DateView>
+            </Box>
+        </Container>
+    );
 };
 
 export default BlogComponent;

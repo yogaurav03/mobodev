@@ -92,11 +92,11 @@ const AboutPage = () => {
         </Spaceman>
 
         <Main>
-        We are Frontend + Backend + DevOps developers located in India. We love to create simple yet beautiful apps and websites with great user experience.
+        I'm software developers located in India. I love to create simple yet beautiful apps and websites with great user experience.
         <br /> <br />
-        We are interested in the whole frontend + backend stack Like trying new things and building great projects. We are an independent freelancers. We love to create newest things for mankind.
+        I'm are interested in the whole frontend + backend stack Like trying new things and building great projects. I'm an independent freelancer love to create newest things for mankind.
         <br /> <br />
-        We believe everything is an Art when you put your consciousness in it. You can connect with us via social links as well as mail.
+        I believe everything is an Art when you put your consciousness in it. You can connect with me via social links as well as mail.
         </Main>
 
         <BigTitle text="ABOUT" top="10%" left="5%" />

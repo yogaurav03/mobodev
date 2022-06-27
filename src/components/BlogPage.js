@@ -4,11 +4,11 @@ import img from "../assets/Images/patrick-tomasso-Oaqk7qqNh_c-unsplash.jpg"
 import LogoComponent from '../subComponents/LogoComponent';
 import PowerButton from '../subComponents/PowerButton';
 import SocialIcons from '../subComponents/SocialIcons';
-import { Blogs } from '../data/BlogData';
 import BlogComponent from './BlogComponent';
 import AnchorComponent from '../subComponents/Anchor';
 import BigTitle from '../subComponents/BigTitle';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 
 const MainContainer = styled(motion.div)`
 background-image: url(${img});
@@ -57,14 +57,37 @@ const container = {
   }
 }
 
-
 const BlogPage = () => {
   
   const [numbers, setNumbers] = useState(0);
+  const [blogs, setBlogs] = useState([]);
+
+  const getBlog = async() => {
+    const URL = 'wp-json/wp/v2/posts';
+    const headers = {
+      headers: {
+        'content-type': 'application/json',
+        Accept: 'application/json',
+      },
+    };
+  
+    await axios
+      .get(URL, headers, {
+        timeout: 3000,
+        mode: "cors",
+      })
+      .then(async response => {
+        setBlogs(response.data)
+      })
+      .catch(error => {
+        console.log('#. getBlog', error);
+      });
+  }
 
   useEffect(() => {
     let num = (window.innerHeight - 70)/30;
     setNumbers(parseInt(num));
+    getBlog();
   },[])
 
   return (
@@ -84,14 +107,14 @@ const BlogPage = () => {
           <Center>
             <Grid>
               {
-                Blogs.map(blog => {
+                blogs.map(blog => {
                   return <BlogComponent key={blog.id} blog={blog} />
                 })
               }
             </Grid>
           </Center>
           
-          <BigTitle text="TEAM" top="5rem" left="5rem" />
+          <BigTitle text="BLOG" top="5rem" left="5rem" />
 
         </Container>
       </MainContainer>

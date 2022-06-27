@@ -221,7 +221,7 @@ const Main = () => {
           </motion.h2>
         </Contact>
 
-        <BLOG to="/team" className='blog' click={click}>
+        <BLOG to="/blog" className='blog' click={click}>
           <motion.h2
             initial={{
               y: -200,
@@ -233,7 +233,7 @@ const Main = () => {
             }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}>
-            Team
+            Blog
           </motion.h2>
         </BLOG>
 
